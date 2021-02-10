@@ -1,11 +1,20 @@
+import {getResult} from "./funtions/funtions.js"
+
 const input = document.getElementById('numInput')
 const counter = document.getElementById('counter')
 const sourceArrHTML = document.getElementById('sourceArr')
+const paramHTML = document.getElementById('param')
+const buttonBig = document.getElementById('>')
+const buttonSmall = document.getElementById('<')
+const result = document.getElementById('processedArr')
 
-let counterValue = 10;
-input.addEventListener('keypress', onKeyEnter)
-
+let counterValue = 10
+let param = false
 const sourceArr = []
+
+input.addEventListener('keypress', onKeyEnter)
+buttonBig.addEventListener('click', () => changeParam(true))
+buttonSmall.addEventListener('click', () => changeParam(false))
 
 function onKeyEnter(event) {
     const val = event.target.value
@@ -20,6 +29,17 @@ function onKeyEnter(event) {
         input.value = ''
         sourceArr.push(val)
         sourceArrHTML.insertAdjacentText('beforeend', ' ' + val + ' ')
+        if (counterValue == 0) {
+            getResult(sourceArr, param, result)
+        }
+    }
+}
 
+function changeParam(value) {
+    param = value
+    if (param) {
+        paramHTML.textContent = '>'
+    } else {
+        paramHTML.textContent = '<'
     }
 }
