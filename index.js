@@ -1,4 +1,4 @@
-import {getResult} from "./funtions/funtions.js"
+const {getResult} = require('./funtions/funtions.js')
 
 const input = document.getElementById('numInput')
 const counter = document.getElementById('counter')

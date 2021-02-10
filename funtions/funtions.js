@@ -1,4 +1,4 @@
-export function isSimple(num) {
+function isSimple(num) {
     for(let i = 2; i < Math.sqrt(num); i++) {
         if(num % i === 0) {
             return false;
@@ -7,7 +7,7 @@ export function isSimple(num) {
     return true;
 }
 
-export function getBiggestNumber(num) {
+function getBiggestNumber(num) {
     let max = 0;
     while (num != 0) {
         if ((num % 10) > max) {
@@ -18,7 +18,7 @@ export function getBiggestNumber(num) {
     return max;
 }
 
-export function getResult(sourceArr, param, resultNode) {
+function getResult(sourceArr, param, resultNode) {
     const processedArr = sourceArr.filter((el)=> {
         if(isSimple(el) && check(el, param)) {
             return true
@@ -32,6 +32,8 @@ export function getResult(sourceArr, param, resultNode) {
     }
 }
 
-export function check(num, param) {
+function check(num, param) {
     return param ? getBiggestNumber(num) > (num % 10) : getBiggestNumber(num) < (num % 10);
 }
+
+module.exports = {isSimple, getBiggestNumber, getResult, check}
