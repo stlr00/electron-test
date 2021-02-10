@@ -13,17 +13,15 @@ function getBiggestNumber(num) {
         if ((num % 10) > max) {
             max = (num % 10)
         }
-        num = num / 10;
+        num = Math.trunc(num / 10)
     }
     return max;
 }
 
 function getResult(sourceArr, param, resultNode) {
     const processedArr = sourceArr.filter((el)=> {
-        if(isSimple(el) && check(el, param)) {
-            return true
-        }
-        return false
+        return isSimple(el) && check(el, param);
+
     })
     if (processedArr.length != 0) {
         resultNode.insertAdjacentText('beforeend',processedArr.join(' '))
