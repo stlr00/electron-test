@@ -5,15 +5,28 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <title>Electron</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <h3>Вариант 5 Весёлкин А. С.</h3>
+    Ввести массив из 10 целых четырехзначных чисел. Сформировать и
+    вывести новый массив, из тех чисел введенного массива, которые являются
+    простыми числами и у этих чисел старшая цифра больше (меньше) последней
+    цифры числа. Соотношение цифр задается пользователем. Если таких
+    элементов нет, то выдать сообщение об этом
+    <br>
+    <button><</button>
+    <button>></button>
+      <input type="number" id="numInput">
+    <br>
+    Признак сравнения: <span><</span>
+    <br>
+    Введите <span id="counter">10</span> 4-х значных чисел
+    <div id="sourceArr">Исходный массив:</div>
+    <div id="processedArr">Обработанный массив:</div>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
