@@ -30,7 +30,7 @@ function onKeyEnter(event) {
         sourceArr.push(val)
         sourceArrHTML.insertAdjacentText('beforeend', ' ' + val + ' ')
         if (counterValue === 0) {
-            getResult(sourceArr, param, result)
+            result.insertAdjacentText('beforeend',getResult(sourceArr, param))
         }
     }
 }
