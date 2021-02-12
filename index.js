@@ -19,7 +19,7 @@ buttonSmall.addEventListener('click', () => changeParam(false))
 function onKeyEnter(event) {
     const val = event.target.value
     if (
-        event.keyCode == 13 &&
+        event.keyCode === 13 &&
         val <= 9999 &&
         val >= 1000 &&
         counterValue > 0
@@ -29,7 +29,7 @@ function onKeyEnter(event) {
         input.value = ''
         sourceArr.push(val)
         sourceArrHTML.insertAdjacentText('beforeend', ' ' + val + ' ')
-        if (counterValue == 0) {
+        if (counterValue === 0) {
             getResult(sourceArr, param, result)
         }
     }

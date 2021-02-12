@@ -23,7 +23,7 @@ function getResult(sourceArr, param, resultNode) {
         return isSimple(el) && check(el, param);
 
     })
-    if (processedArr.length != 0) {
+    if (processedArr.length !== 0) {
         resultNode.insertAdjacentText('beforeend',processedArr.join(' '))
     } else {
         resultNode.insertAdjacentText('beforeend', 'Нет элементов удовлетворяющих условию!')
