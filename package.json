@@ -1,7 +1,7 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-test-app",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Electron with jest app",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -10,13 +10,10 @@
   "repository": "https://github.com/stlr00/electron-test",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "test"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Alexander Vesyolkin <sashaasdzxc@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^11.2.3",
     "jest": "^26.6.3"
