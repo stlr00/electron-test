@@ -15,7 +15,7 @@
   "author": "Alexander Vesyolkin <sashaasdzxc@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^11.2.3",
+    "electron": "^11.3.0",
     "jest": "^26.6.3"
   }
 }
