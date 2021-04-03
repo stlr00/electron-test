@@ -8,7 +8,7 @@ function isSimple(num) {
 }
 
 function getBiggestNumber(num) {
-    let max = 0;
+    let max = 0
     while (num !== 0) {
         if ((num % 10) > max) {
             max = (num % 10)

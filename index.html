@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="ru">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Electron</title>
-  </head>
-  <body>
-    <h3>Вариант 5 Весёлкин А. С.</h3>
-    Ввести массив из 10 целых четырехзначных чисел. Сформировать и
-    вывести новый массив, из тех чисел введенного массива, которые являются
-    простыми числами и у этих чисел старшая цифра больше (меньше) последней
-    цифры числа. Соотношение цифр задается пользователем. Если таких
-    элементов нет, то выдать сообщение об этом
-    <br>
-    <button id="<"><</button>
-    <button id=">">></button>
-    <input type="number" id="numInput">
-    <br>
-    Признак сравнения: <span id="param"><</span>
-    <br>
-    Введите <span id="counter">10</span> 4-х значных чисел
-    <div id="sourceArr">Исходный массив:</div>
-    <div id="processedArr">Результат: </div>
-
-    <script src="index.js"></script>
-  </body>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+</head>
+<body>
+<h3>Вариант 5 Весёлкин А. С.</h3>
+Ввести массив из 10 целых четырехзначных чисел. Сформировать и
+вывести новый массив, из тех чисел введенного массива, которые являются
+простыми числами и у этих чисел старшая цифра больше (меньше) последней
+цифры числа. Соотношение цифр задается пользователем. Если таких
+элементов нет, то выдать сообщение об этом
+<br>
+<button id="<">&#60;</button>
+<button id=">">&#62;</button>
+<input type="number" id="numInput">
+<br>
+Признак сравнения: <span id="param"><</span>
+<br>
+Введите <span id="counter">10</span> 4-х значных чисел
+<div id="sourceArr">Исходный массив:</div>
+<div id="processedArr">Результат:</div>
+</body>
 </html>
